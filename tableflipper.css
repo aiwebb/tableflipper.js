@@ -1,0 +1,84 @@
+.tf-cell {
+	display: inline-block;
+}
+
+/* BORDERS */
+.tf-frame {
+	border:        1px solid black;
+	border-radius: 0;
+}
+
+.tf-header {
+	border-bottom: 2px solid black;
+}
+
+.tf-footer {
+	border-top: 2px solid black;
+}
+
+.tf-row {
+	border-top: 1px solid black;
+}
+
+.tf-row:first-child {
+	border-top: none;
+}
+
+.tf-cell {
+	border-left: 1px solid black;
+}
+
+.tf-cell:first-child {
+	border-left: none;
+}
+
+/* SPACING */
+.tf-header .tf-cell, .tf-footer .tf-cell {
+	padding-top:    5px;
+	padding-bottom: 5px;
+}
+
+.tf-cell {
+	padding-left:  10px;
+	padding-right: 10px;
+}
+
+/* COLORS */
+.tf-frame {
+	overflow-y: auto;
+	max-height: 100%;
+}
+
+.tf-header {
+	background:  #0BF;
+	color:       white;
+	font-weight: bold;
+	position:    absolute;
+}
+
+.tf-footer {
+	background:  #DDF7FF;
+	font-weight: bold;
+	position:    absolute;
+}
+
+.tf-row:nth-child(even) {
+	background-color: #f7f7f7;
+}
+
+.tf-row.tf-selected {
+	background: -webkit-linear-gradient(top, rgba(242,245,246,1) 0%,rgba(227,234,237,1) 37%,rgba(200,215,220,1) 100%);
+	/*font-weight: bold;*/
+}
+
+/* EMPTY MESSAGE */
+.tf-empty-msg {
+	font-style: italic;
+	color: #555;
+	text-align: center;
+	padding: 40px;
+}
+
+.tf-body {
+	/*min-height: 1px;*/
+}
